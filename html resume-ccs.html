@@ -1,43 +1,174 @@
 <!DOCTYPE html>
-<html lang ="de"></html>
+<html lang="de">
 <head>
-  <link rel="stylesheet" href="style.css" />
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Lebenslauf — Gergely Bak</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lebenslauf — Gergely Bak</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f7f8fa;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --shadow: 0 8px 28px rgba(0, 0, 0, 0.05);
+      --radius: 16px;
+      --maxw: 860px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .cv-wrapper {
+      width: 100%;
+      max-width: var(--maxw);
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 20px;
+    }
+
+    header img {
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    h2 {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--accent);
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 4px;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    p {
+      color: var(--muted);
+      margin-left: 4px;
+      font-size: 14px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 20px;
+    }
+
+    .contact-info li {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 640px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      header img {
+        width: 120px;
+        height: auto;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <body>
-
-    <h1>Gergely Bak</h1>
-<img src="prof.jpg" width="170" height="200" alt="Gergely Bak">
-    
-        <ul>
-         <li>87645 Schwangau, Kreuzweg 24 ·
-         <li> <a href=>+4915159981222 ·</a>
-         <li> <a href=> bakgergely@gmail.com</a>
+  <div class="cv-wrapper">
+    <header>
+      <div>
+        <h1>Gergely Bak</h1>
+        <ul class="contact-info">
+          <li>📍 87645 Schwangau, Kreuzweg 24</li>
+          <li>📞 <a href="tel:+4915159981222">+49 1515 9981222</a></li>
+          <li>✉️ <a href="mailto:bakgergely@gmail.com">bakgergely@gmail.com</a></li>
         </ul>
-    
-  </header>
+      </div>
+      <img src="prof.jpg" width="170" height="200" alt="Gergely Bak">
+    </header>
+
     <main>
       <section>
         <h2>Berufserfahrung</h2>
         <ul>
-        <li>04/2024 – heute - Das Rübezahl, Schwangau (Deutschland) <p>F&B Allrounder</p>
-        <li>10/2023 – 02/2024 Kilronan Castle  Spa, Irland <p> Barkeeper / Mixologist</p>
-        <li>05/2023 – 09/2023 Seewirt am Thumsee, Deutschland <p>Commis de Rang</p>
-        <li>11/2022 – 04/2023 Mulk Hotel, Österreich<p>Barkeeper / Kellner</p>
-        <li>07/2021 – 11/2022 Grand Circle Cruise Line (Flussschiff, Frankreich)<p> Kellner / Barkeeper</p>
-        <li>2019 – 2021  Honeywell Kft., Budapest (Ungarn) <p>Online-Disponent</p>
-        <li>06/2017 – 11/2017 Stapleford Park Hotel, UK <p>Barkeeper</p>
-        <li>02/2017 – 06/2017 Skelwith Bridge Hotel, UK <p>Allrounder</p>
-        <h1>Ausbildung</h1>
-        <li>2009 – 2012 -  Nagyberegi Református Gymnasium - Abitur
-        <li>2012 – 2015 - Universität für Sportwissenschaft - Studiengang Sportmanagement
-        <li>2025 – 2026 - WBS Coding School -  AI Software Development
-            </ul>
+          <li><strong>04/2024 – heute</strong> — Das Rübezahl, Schwangau (Deutschland) <p>F&amp;B Allrounder</p></li>
+          <li><strong>10/2023 – 02/2024</strong> — Kilronan Castle Spa, Irland <p>Barkeeper / Mixologist</p></li>
+          <li><strong>05/2023 – 09/2023</strong> — Seewirt am Thumsee, Deutschland <p>Commis de Rang</p></li>
+          <li><strong>11/2022 – 04/2023</strong> — Mulk Hotel, Österreich <p>Barkeeper / Kellner</p></li>
+          <li><strong>07/2021 – 11/2022</strong> — Grand Circle Cruise Line (Flussschiff, Frankreich) <p>Kellner / Barkeeper</p></li>
+          <li><strong>2019 – 2021</strong> — Honeywell Kft., Budapest (Ungarn) <p>Online-Disponent</p></li>
+          <li><strong>06/2017 – 11/2017</strong> — Stapleford Park Hotel, UK <p>Barkeeper</p></li>
+          <li><strong>02/2017 – 06/2017</strong> — Skelwith Bridge Hotel, UK <p>Allrounder</p></li>
+        </ul>
+      </section>
 
+      <section>
+        <h2>Ausbildung</h2>
+        <ul>
+          <li>2009 – 2012 — Nagyberegi Református Gymnasium — Abitur</li>
+          <li>2012 – 2015 — Universität für Sportwissenschaft — Sportmanagement</li>
+          <li>2025 – 2026 — WBS Coding School — AI Software Development</li>
+        </ul>
+      </section>
+
+      <section>
         <h2>Sprachkenntnisse</h2>
         <ul>
           <li>Englisch — fließend (C1, tägliche Anwendung)</li>
@@ -45,24 +176,34 @@
           <li>Ukrainisch — Grundkenntnisse (passiv)</li>
           <li>Ungarisch — Muttersprache</li>
         </ul>
+      </section>
+
+      <section>
         <h2>IT &amp; Sonstiges</h2>
         <ul>
-          
-         <li>MS Office (Word, Excel, PowerPoint, Outlook)
-          <li>Führerschein Klasse B (seit 2018)
-          <li>Rettungsschwimmer-Ausbildung (2015, WSZFI, Budapest)
-          <li>Barkeeper-Training (2016, BestMixer)
+          <li>MS Office (Word, Excel, PowerPoint, Outlook)</li>
+          <li>Führerschein Klasse B (seit 2018)</li>
+          <li>Rettungsschwimmer-Ausbildung (2015, WSZFI, Budapest)</li>
+          <li>Barkeeper-Training (2016, BestMixer)</li>
         </ul>
+      </section>
 
+      <section>
         <h2>Interessen</h2>
         <ul>
-        <li>Coding
-        <li>Sport
-        <li> Wandern
-        <li>Kochen
-        <li> Reisen
-        <li>Gaming
-            </ul>
+          <li>Coding</li>
+          <li>Sport</li>
+          <li>Wandern</li>
+          <li>Kochen</li>
+          <li>Reisen</li>
+          <li>Gaming</li>
+        </ul>
+      </section>
+    </main>
 
+    <footer>
+      © 2025 Gergely Bak — Modern CV Design
+    </footer>
+  </div>
 </body>
 </html>
